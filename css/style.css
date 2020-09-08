@@ -1,0 +1,119 @@
+@charset "utf-8";
+/* CSS Document */
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: cursive;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background: linear-gradient(#ffff00 0%, #cc0000 100%) no-repeat;
+    height: 100vh;
+	overflow-x: hidden;
+}
+[tabindex="-1"]:focus:not(:focus-visible) {
+	outline: 0!important;
+}
+
+h1 {
+	margin-top: 0;
+	margin-bottom: .5rem;
+}
+
+.main-hd {
+	text-align: center;
+	margin: 50px;
+}
+
+.row .block {
+    margin: 0 10px 10px 10px;
+    border: 3px solid #fff;
+    padding: 0px 20px 20px 20px;
+    background: #000;
+}
+
+.block > div {
+    border: 3px solid #fff;
+    padding: 5px 30px 5px 30px;
+    position: relative;
+    top: -2px;
+    right: -23px;
+    float: right;
+}
+
+.block > div {
+	text-align: center;
+	font-weight: 600;
+	font-size: 1rem;
+	margin: 0;
+}
+
+.block p {
+    margin-bottom: 1rem;
+    margin-top: 70px;
+    color: #fff;
+    font-size: 15px;
+}
+
+.block .chicken{
+	background: #D59898;
+}
+
+.block .beef{
+	background: #C14543;
+	color: #fff;
+}
+
+.block .sushi{
+	background: #E5D198;
+}
+
+#header-nav {
+	background-color: #c40233;
+}
+
+#header-nav p {
+    font-size: 30px;
+    margin: auto;
+    color: #fff;
+}
+
+@media (max-width:768px) and (min-width: 576px) {
+	
+	.block p {
+		font-size: 12px;
+	}
+	
+	.row .block {
+    	margin: 0 10px 50px 10px;
+	}
+}
+
+@media (max-width: 998px)  and (min-width: 768px) {
+	body {
+		height: 115vh;
+	}
+	.block p {
+		font-size: 12px;
+		margin-top: 50px;
+	}
+	.main-hd {
+		margin-bottom: 45px;
+	}
+}
+
+
+@media (max-width: 576px) {
+	body {
+		height: 220vh;
+	}
+	.main-hd {
+		text-align: center;
+		margin: 20px;
+	}
+}
